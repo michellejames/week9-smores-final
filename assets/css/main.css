@@ -1,0 +1,340 @@
+/* 
+==============================================
+CONTENT:	S'mores Builder
+AUTHOR:		Michelle James
+==============================================*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #D2C5B1;
+  color: #34281D;
+  font-family: 'PT Serif', serif;
+}
+
+.page-wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Hammersmith One', sans-serif;
+  color: #FFF;
+}
+
+.header p {
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+.logo {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.nav li a {
+  color: #E92F24;
+  font-family: 'Hammersmith One', sans-serif;
+  text-transform: uppercase;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline h1 {
+  font-family: 'Hammersmith One', sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.headline p {
+  margin: 20px 0;
+  line-height: 25px;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.frame-sprite {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url(../img/icons.png);
+  background-position: -2px;
+  width: 41px;
+  height: 37px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: -52px;
+}
+
+.marshmallow-sprite {
+  background-image: url(../img/icons.png);
+  background-position: -44px;
+  width: 44px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: -52px;
+}
+
+.candy-sprite {
+  background-image: url(../img/icons.png);
+  background-position: -88px;
+  width: 25px;
+  height: 37px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: -52px;
+}
+
+.accessories-sprite {
+  background-image: url(../img/icons.png);
+  background-position: -121px;
+  width: 40px;
+  height: 41px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: -52px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  background-color: #DBD1C0;
+  border: 2px solid #E6DED2;
+  border-radius: 5px;
+  margin: 20px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  flex: 1 0 200px;
+  font-size: 0.9em;
+}
+
+.col h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'Hammersmith One', sans-serif;
+  padding-bottom: 25px;
+}
+
+.col ul {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.col label {
+  padding-left: 10px;
+}
+
+.last-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: auto;
+}
+
+.last-item label {
+  margin-right: 5px;
+}
+
+.text-input {
+  flex: 1;
+  width: 100%;
+  display: block;
+  border: 2px solid #BBA78B;
+} 
+
+.name-smores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-family: 'Hammersmith One', sans-serif;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.name-smores label {
+  margin-right: 20px;
+}
+
+.name-smores input {
+  border: 2px solid #BBA78B;
+  flex: 1;
+  width: 100%;
+  display: block;
+  height: 25px;
+}
+
+.name-smores button {
+  color: #FFF;
+  text-transform: uppercase;
+  background-color: #E9300F;
+  border: 2px solid #A72A11;
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.inspiration {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.inspiration h2 {
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.recommendations {
+  background-color: #4F3B2A;
+  color: #D2C5B1;
+  border: 2px solid #32261B;
+  flex: 1 0 200px;
+  margin: 10px 10px;
+  padding-bottom: 25px;
+}
+
+.recommendations h3 {
+  text-transform: uppercase;
+  font-family: 'Hammersmith One', sans-serif;
+  padding: 25px 0;
+}
+
+.page-numbers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  margin: 10px 20px;
+}
+
+.page-numbers a {
+  display: flex;
+  background-color: #DBD0BF;
+  color: #E9300F;
+  border: 2px solid #E6DED2;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 0 10px 0;
+}
+
+.previous-button {
+  order: -3;
+  margin-right: 27%;
+}
+
+.next-button {
+  order: -2;
+  margin-left: 28%;
+}
+
+@media screen and (min-width: 480px) {
+
+  .name-smores {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+
+  .name-smores input {
+    flex: 1;
+    width: 100%;
+    display: block;
+  }
+
+  .name-smores label {
+    margin-left: 20px;
+  }
+
+  .name-smores button {
+    width: 15%;
+    height: 25px;
+    margin: 0 20px;
+  }
+
+  .page-numbers {
+    justify-content: space-between;
+  }
+
+  .previous-button {
+    margin-right: 0;
+  }
+
+  .next-button {
+    order: 8;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 760px) {
+
+  .nav {
+    margin-top: -9%;
+    padding-bottom: 61px;
+  }
+
+  .second-item {
+    margin-right: 45%;
+  }
+
+  .header {
+    z-index: -1;
+  }
+
+  .name-smores button {
+    width: 10%;
+    height: 25px;
+    margin: 0 20px;
+  }
+
+  .page-numbers {
+    justify-content: center;
+  }
+
+  .page-numbers li {
+    padding: 0 10px;
+  }
+
+  .accessories {
+    width: 100%;
+  }
+}
